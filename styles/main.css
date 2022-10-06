@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: clamp(1.2rem, 2.5vw, 2rem); 
+}
+.txt-sml{
+    font-size: 0.7rem;
+    color: #1212b5;
+}
+header{
+    position: relative;
+}
+/* NAVIGATION */
+.humburger span{
+    background: #000;
+    width: 1.7rem;
+    height: 0.1rem;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+nav{
+    position: relative;
+    background: #94fc94;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    width: 100%;
+    padding: 0.5rem;
+    left: 0;
+    right: 0;
+}
+nav a{
+    color: #090420;
+    /* color: #fff; */
+    font-weight: 700;
+}
+.logo{
+    font-size: 1.2rem;
+}
+.nav-big-screen{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.nav-big-links>*{
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+.nav-small-screens{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+/* NAVIGATION */
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #09471b;
+    border-radius: 0.2rem;
+    color: #fff;
+}
+.hero img{
+    max-height: 500px;
+    background: #25d48e;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    border-radius: 0.5rem;
+}
+.hero-txt h1{
+    text-align: center;
+    font-size: clamp(1.5rem, 2.5vw, 2rem); 
+
+}
+.hero-txt p{
+    margin-top: 1rem;
+    font-weight: 500;
+    line-height: 2;
+}
+.hero-txt p strong{
+    color:#fff;
+}
+main{
+  
+}
+
+.medals-container{
+    display: flex;
+    flex-wrap: no wrap;
+    gap:1rem;
+    overflow: scroll;
+}
+section{
+   padding: 1.5rem;  
+}
+ .medal-img{
+    min-width: 270px;
+    min-height: 240px;
+    max-width: 270px;
+    max-height: 240px;
+    padding: 0.1rem;
+    border-radius: 0.4rem;
+ }
+ .section-title{
+    margin: 1rem;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem); 
+ }
+ .see-all-awards{
+    min-width: 270px;
+    min-height: 240px;
+    max-width: 270px;
+    max-height: 240px;
+    padding: 0.1rem;
+    border-radius: 0.4rem;
+    background: #a2ecb9;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+ }
+ .medals-container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+ }
+ .medals-container::-webkit-scrollbar {
+    display: none;
+  }
+  /* END OF MEDALS AND AWARDS SECTION */
+
+  /* GUIDE BOOKS SECTION */
+  .books-section{
+    background: #c5fbc5;
+  }
+  .books-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    justify-items:center;
+    gap:0.4rem;
+}
+.books-container a{
+    text-align: center;
+    transition: 200ms ease-in-out;
+}
+.books-container a:hover{
+    transform: scale(1.02);
+}
+.books-container a img{
+    width: 300px;
+    max-height: 100%;
+}
+.guide-book-title{
+    text-transform: uppercase;
+    color: #1212b5;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+/* END OF GUIDE BOOKS */
+
+/* NAVIGATION */
+@media(max-width:900px){
+    .nav-big-screen{
+        display: none;
+    }
+    .nav-small-screens{
+        display: flex;
+    }
+    .hero{
+        grid-template-columns: 1fr; 
+        padding: 2rem 1rem ;
+        gap: 2rem;
+        
+    }
+    .hero-txt{
+        color: #fff;
+        margin: 0.5rem;
+    }
+    .hero-img{
+        order: -1;
+        margin: 0.5rem;
+    }
+}
+
