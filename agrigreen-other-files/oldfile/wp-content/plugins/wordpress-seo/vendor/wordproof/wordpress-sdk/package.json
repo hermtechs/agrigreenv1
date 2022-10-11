@@ -1,0 +1,22 @@
+{
+    "name": "wordpress-sdk",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/wordproof/wordpress-sdk.git",
+    "author": "Marijn Bent <marijn@marijnbent.nl>",
+    "license": "MIT",
+    "dependencies": {
+        "@wordproof/uikit": "^1.0.38",
+        "prop-types": "^15.8.1"
+    },
+    "scripts": {
+        "lint": "wp-scripts lint-js ./resources/js",
+        "format": "wp-scripts format ./resources/js",
+        "build": "wp-scripts build ./resources/js/data.js ./resources/js/uikit.js ./resources/js/wordproof-elementor-editor.js ./resources/js/wordproof-block-editor.js ./resources/js/wordproof-classic-editor.js",
+        "watch": "wp-scripts start ./resources/js/data.js ./resources/js/uikit.js ./resources/js/wordproof-elementor-editor.js ./resources/js/wordproof-block-editor.js ./resources/js/wordproof-classic-editor.js",
+        "watch:hot": "wp-scripts start ./resources/js/data.js ./resources/js/uikit.js ./resources/js/wordproof-elementor-editor.js ./resources/js/wordproof-block-editor.js ./resources/js/wordproof-classic-editor.js --hot"
+    },
+    "devDependencies": {
+        "@wordpress/scripts": "^20.0.2"
+    }
+}

@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+body, html {
+	margin:0;
+	padding:0;
+	border:0;
+	width:100%;
+	font:Arial, Helvetica, sans-serif;
+	vertical-align:baseline;
+	background:#d0d0d0;
+}
+body {
+	line-height:1;
+}
+#parent
+{
+	margin:0 auto;
+	width:1280px;
+	height:720px;
+	background:url(images/bg.jpg) no-repeat center;
+}
+#wrap
+{
+	position:relative;
+	float:left;
+	left:50%;
+	
+}
+#wrap-inner
+{
+	position:relative;
+	float:left;
+	left:-80%;
+	
+}
+.logo
+{
+	margin-top:250px;
+	width:400px;
+	height:200px;
+	
+	background:url(images/logo.png) no-repeat right;
+	
+}
+.menu
+{
+	float:right;
+	display:block;
+	overflow:hidden;
+	position:relative;
+	top:-80px;
+left:128px;
+color:#006699;
+	
+}
+.menu a
+{
+	font:12px Arial, Helvetica, sans-serif;
+	color:#006699;
+	text-decoration:underline;
+	
+}
+.menu a:hover
+{
+	font:12px Arial, Helvetica, sans-serif;
+	color:#09F;
+	text-decoration:underline;
+	
+}
+.copyright
+{
+		float:right;
+	display:block;
+	overflow:hidden;
+	position:relative;
+	top:-75px;
+left:128px;
+font:11px Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+div.survey a
+{
+	display:block;
+	text-align:center;
+	font:18px Arial, Helvetica, sans-serif;
+	color:#F90;
+position:relative;
+	top:-75px;
+left:128px;
+float:right;
+}
