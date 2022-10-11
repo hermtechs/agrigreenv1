@@ -36,15 +36,17 @@ header{
 
 nav{
     position: relative;
-    background: #94fc94;
+    /* background: #94fc94; */
+    background: #24c054;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     width: 100%;
     padding: 0.5rem;
     left: 0;
     right: 0;
+    color: #1212b5;
 }
 nav a{
-    color: #090420;
+    /* color: #090420; */
     /* color: #fff; */
     font-weight: 700;
 }
@@ -76,7 +78,8 @@ nav a{
     justify-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: #09471b;
+    /* background: #09471b; */
+    background: #24c054;
     border-radius: 0.2rem;
     color: #fff;
 }
