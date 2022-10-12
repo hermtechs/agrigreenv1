@@ -22,6 +22,9 @@ h1,h2,h3,h4,h5,h6{
     font-size: 0.7rem;
     color: #1212b5;
 }
+.title{
+    color:#3b3bd9;
+}
 header{
     position: relative;
 }
@@ -37,17 +40,18 @@ header{
 nav{
     position: relative;
     /* background: #94fc94; */
-    background: #24c054;
+    background: #2be864;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     width: 100%;
     padding: 0.5rem;
     left: 0;
     right: 0;
-    color: #1212b5;
+    /* color: #fff; */
 }
 nav a{
     /* color: #090420; */
     /* color: #fff; */
+    color: #3b3bd9;
     font-weight: 700;
 }
 .logo{
@@ -79,7 +83,10 @@ nav a{
     gap: 1rem;
     padding: 1rem;
     /* background: #09471b; */
-    background: #24c054;
+    /* background: #24c054; */
+    background: #0b6693;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#bfffce, #38ef7d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#43a7f3, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 0.2rem;
     color: #fff;
 }
@@ -201,8 +208,15 @@ section{
         margin: 0.5rem;
     }
 }
+.main-gallery-container{
+    background: #0b6693;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 .section-awards-imgs{
-    background: #c5fbc5;
+    margin: 0;
+    width:100%
 }
 .img-section-title{
     text-align: center;
@@ -221,7 +235,7 @@ section{
     max-width: 150px;
     min-width: 150px;
     height: 145px;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     /* object-fit: fill; */
     transition: 200ms ease-in-out;
 }
