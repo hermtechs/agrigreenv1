@@ -38,7 +38,7 @@ header{
 }
 
 nav{
-    position: relative;
+    position: fixed;
     /* background: #94fc94; */
     background: #2be864;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
@@ -46,6 +46,7 @@ nav{
     padding: 0.5rem;
     left: 0;
     right: 0;
+    z-index: 1000;
     /* color: #fff; */
 }
 nav a{
@@ -82,6 +83,8 @@ nav a{
     justify-items: center;
     gap: 1rem;
     padding: 1rem;
+    position: relative;
+    top: 2.3rem;
     /* background: #09471b; */
     /* background: #24c054; */
     background: #0b6693;  /* fallback for old browsers */
@@ -89,6 +92,7 @@ nav a{
     background: linear-gradient(to right,#43a7f3, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 0.2rem;
     color: #fff;
+    /* padding-top: 10rem; */
 }
 .hero img{
     max-height: 500px;
@@ -209,6 +213,8 @@ section{
     }
 }
 .main-gallery-container{
+    position: relative;
+    top: 1.5rem;
     background: #0b6693;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
