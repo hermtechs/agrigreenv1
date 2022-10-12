@@ -103,9 +103,6 @@ nav a{
 .hero-txt p strong{
     color:#fff;
 }
-main{
-  
-}
 
 .medals-container{
     display: flex;
@@ -204,4 +201,30 @@ section{
         margin: 0.5rem;
     }
 }
-
+.section-awards-imgs{
+    background: #c5fbc5;
+}
+.img-section-title{
+    text-align: center;
+    padding: 1rem;
+    color:#3b3bd9;
+}
+.awards-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+}
+.gallery img{
+    max-width: 150px;
+    min-width: 150px;
+    height: 145px;
+    border-radius: 0.5rem;
+    /* object-fit: fill; */
+    transition: 200ms ease-in-out;
+}
+.gallery img:hover{
+    transform: scale(1.05);
+}
