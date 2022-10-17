@@ -57,6 +57,7 @@ nav a{
 }
 .logo{
     font-size: 1.2rem;
+    cursor: pointer;
 }
 .nav-big-screen{
     display: grid;
@@ -242,7 +243,7 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
     min-width: 150px;
     height: 145px;
     border-radius: 0.4rem;
-    /* object-fit: fill; */
+    object-fit: cover;
     transition: 200ms ease-in-out;
 }
 .gallery img:hover{
