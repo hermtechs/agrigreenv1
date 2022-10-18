@@ -240,9 +240,9 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
     padding: 0.3rem;
 }
 .gallery img{
-    max-width: 200px;
-    min-width: 200px;
-    height: 175px;
+    max-width: 170px;
+    min-width: 170px;
+    height: 145px;
     border-radius: 0.4rem;
     object-fit: cover;
     transition: 200ms ease-in-out;
@@ -250,8 +250,3 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
 .gallery img:hover{
     transform: scale(1.05);
 }
-/* .gallery .proposal-img{
-    min-width:220px;
-    max-width: 220px;
-    height: 160px;
-} */
