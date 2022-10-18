@@ -250,3 +250,8 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
 .gallery img:hover{
     transform: scale(1.05);
 }
+/* .gallery .proposal-img{
+    min-width:220px;
+    max-width: 220px;
+    height: 160px;
+} */
