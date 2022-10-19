@@ -16,7 +16,7 @@ img{
     max-width: 100%;
 }
 h1,h2,h3,h4,h5,h6{
-    font-size: clamp(1.2rem, 2.5vw, 2rem); 
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem); 
 }
 .txt-sml{
     font-size: 0.7rem;
@@ -240,8 +240,9 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
     padding: 0.3rem;
 }
 .gallery img{
+    width: 100%;
     max-width: 150px;
-    min-width: 150px;
+    min-width: 120px;
     height: 145px;
     border-radius: 0.4rem;
     object-fit: cover;
@@ -249,4 +250,45 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
 }
 .gallery img:hover{
     transform: scale(1.05);
+}
+
+/* SMALL GALLERIES ON HOME PAGE @index.html */
+.inventorium-photos{
+    background: #eee;
+}
+.main-small-gallery-wrapper{
+    /* background: linear-gradient(-45deg, #26d6ca, #13a913, #23a6d5, #23d5ab); */
+    background: #0b6693;
+    display: block;
+    color: #ffff;
+    padding-top: 0.1rem;
+    padding-bottom: 0.3rem;
+    max-width: 500px;
+}
+.small-galler-photos-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 600px;
+    /* height: 600px; */
+    /* max-width: 250px; */
+    justify-content: center;
+}
+.small-galler-photos-wrapper img{
+    min-width: 150px;
+    max-width: 200px;
+    height: 110px;
+    padding: 0.15rem;
+    object-fit: cover;
+    transition: 200ms ease-in;
+}
+.small-galler-photos-wrapper img:hover{
+    transform: scale(1.02);
+}
+.small-gallery-descriptive-txt{
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    background: #0b6693;
+    max-width: 500px;
 }
