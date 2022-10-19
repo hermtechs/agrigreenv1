@@ -240,8 +240,8 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
     padding: 0.3rem;
 }
 .gallery img{
-    max-width: 170px;
-    min-width: 170px;
+    max-width: 150px;
+    min-width: 150px;
     height: 145px;
     border-radius: 0.4rem;
     object-fit: cover;
