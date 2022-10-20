@@ -256,40 +256,65 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
 .inventorium-photos{
     background: #eee;
 }
+.photo-gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-items: center;
+}
 .main-small-gallery-wrapper{
     /* background: linear-gradient(-45deg, #26d6ca, #13a913, #23a6d5, #23d5ab); */
-    background: #0b6693;
+    /* background: #0b6693; */
+    background: #23a6d5;
     display: block;
     color: #ffff;
     padding-top: 0.1rem;
     padding-bottom: 0.3rem;
     max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
 }
-.small-galler-photos-wrapper{
+.small-gallery-photos-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 600px;
+    max-width: 700px;
     /* height: 600px; */
     /* max-width: 250px; */
     justify-content: center;
 }
-.small-galler-photos-wrapper img{
-    min-width: 110px;
-    max-width: 200px;
+.small-gallery-photos-wrapper img{
+    min-width: 115px;
+    max-width: 250px;
     height: 110px;
     width: 100%;
     padding: 0.15rem;
     object-fit: cover;
     transition: 200ms ease-in;
+    border-radius: 0.3rem;
 }
 .small-galler-photos-wrapper img:hover{
     transform: scale(1.02);
 }
 .small-gallery-descriptive-txt{
-    padding-right: 0.4rem;
-    padding-left: 0.4rem;
+    /* padding-right: 0.4rem; */
+    /* padding-left: 0.4rem; */
+    padding: 0.5rem;
     display: flex;
+    gap: 0.5rem;
     justify-content: space-between;
-    background: #0b6693;
+    background: #23a6d5;
     max-width: 500px;
+}
+.small-gallery-descriptive-txt a{
+    /* color: #f0f1f8; */
+    /* color: #1212d7; */
+    color: #fff;
+    font-style: oblique;
+    font-weight: 900;
+    /* border: 1px solid #fff; */
+    background: #23b3e3;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* border-radius: 0.3rem; */
 }
