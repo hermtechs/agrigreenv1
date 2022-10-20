@@ -217,8 +217,8 @@ section{
     position: relative;
     top: 1.5rem;
     background: #0b6693;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .section-awards-imgs{
@@ -231,22 +231,27 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
     color:#3b3bd9;
 }
 .awards-gallery{
-    display:flex;
-    flex-wrap: wrap;
+    /* display:flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) ); */
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    /* justify-items: center; */
-    padding: 0.3rem;
+    justify-items: center;
+    /* padding: 0.3rem; */
 }
 .gallery img{
     width: 100%;
     max-width: 160px;
     min-width: 160px;
-    height: 140px;
+    height: 100%;
+    max-height: 120px;
     border-radius: 0.4rem;
     object-fit: cover;
     transition: 200ms ease-in-out;
+
 }
 .gallery img:hover{
     transform: scale(1.05);
@@ -257,8 +262,8 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
     background: #eee;
 }
 .photo-gallery-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
     gap: 1rem;
     justify-items: center;
 }
@@ -293,7 +298,7 @@ background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, F
     transition: 200ms ease-in;
     border-radius: 0.3rem;
 }
-.small-galler-photos-wrapper img:hover{
+.small-gallery-photos-wrapper img:hover{
     transform: scale(1.02);
 }
 .small-gallery-descriptive-txt{
