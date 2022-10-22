@@ -29,13 +29,58 @@ header{
     position: relative;
 }
 /* NAVIGATION */
+.humburger{
+    cursor: pointer;
+    /* position: relative; */
+    transition: 200ms ease-in;
+}
 .humburger span{
-    background: #000;
+    background: #063aa3;
     width: 1.7rem;
     height: 0.1rem;
     display: block;
     margin-bottom: 0.3rem;
 }
+.nav-links-small-screen{
+    position: fixed;
+    background: #088e13;
+    left: 0;
+    /* right: 0; */
+    width: 80%;
+    top: 2.6rem;
+    bottom: 0;
+    opacity: 0.97;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: -1000;
+    transition: 200ms ease-in;
+    transform: translateX(-100%);
+}
+.nav-links-small-screen a{
+    color: #fff;
+
+}
+
+/* The .nav-open class is to be manipulated by js */
+.nav-open span:nth-of-type(1){
+    position: relative;  
+    transform: rotate(45deg);
+    transition: 500ms;
+    top: 0.6rem;
+  }
+  .nav-open span:nth-of-type(2){
+    transform: scale(1,0);
+    transition: 500ms;
+    }
+    .nav-open span:nth-of-type(3){
+      position: relative;
+      transform: rotate(-45deg);
+      transition: 500ms;
+      }
+
+
 
 nav{
     position: fixed;
@@ -90,15 +135,15 @@ nav a{
     /* background: #24c054; */
     background: #1c4ab7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,#1c4ab7, #38ef7d);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,#2488fa, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right,#0954ab, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 0.2rem;
     color: #fff;
     /* padding-top: 10rem; */
 }
 .hero img{
     max-height: 500px;
-    background: #25d48e;
-    padding: 0.5rem;
+    /* background: #25d48e; */
+    /* padding: 0.5rem; */
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     border-radius: 0.5rem;
 }
@@ -190,29 +235,7 @@ section{
 }
 /* END OF GUIDE BOOKS */
 
-/* NAVIGATION */
-@media(max-width:900px){
-    .nav-big-screen{
-        display: none;
-    }
-    .nav-small-screens{
-        display: flex;
-    }
-    .hero{
-        grid-template-columns: 1fr; 
-        padding: 2rem 1rem ;
-        gap: 2rem;
-        
-    }
-    .hero-txt{
-        color: #fff;
-        margin: 0.5rem;
-    }
-    .hero-img{
-        order: -1;
-        margin: 0.5rem;
-    }
-}
+
 body{
     background: #2488fa;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #38ef7d, #2488fa); /* Chrome 10-25, Safari 5.1-6*/
@@ -331,8 +354,38 @@ body{
     /* border-radius: 0.3rem; */
 }
 
-@media (max-width:410px){
+/* media queries go below */
+/* NAVIGATION */
+@media(max-width:900px){
+    .nav-big-screen{
+        display: none;
+    }
+    .nav-small-screens{
+        display: flex;
+    }
+    .hero{
+        grid-template-columns: 1fr; 
+        padding: 2rem 1rem ;
+        gap: 2rem;
+        
+    }
+    .hero-txt{
+        color: #fff;
+        margin: 0.5rem;
+    }
+    .hero-img{
+        order: -1;
+        margin: 0.5rem;
+    }
+}
+@media (max-width:500px){
     .photo-gallery-container{
         grid-template-columns: repeat( auto-fit, minmax(330px, 1fr) );
+    }
+}
+@media (min-width:900px){
+    .nav-links-small-screen{
+        /* transform: translateX(-100%); */
+        display: none;
     }
 }
