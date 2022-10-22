@@ -11,3 +11,9 @@ navBtn.addEventListener('click', ()=>{
         smallScreenMenu.style.transform = 'translateX(0%)'
     }
 })
+const navLinksSmallScreen = document.querySelectorAll(".nav-links-small-screen a");
+navLinksSmallScreen.forEach(link=>{
+    link.addEventListener('click', ()=>{
+        smallScreenMenu.style.transform = 'translateX(-100%)'
+    })
+})
