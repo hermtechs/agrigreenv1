@@ -15,6 +15,19 @@ a{
 img{
     max-width: 100%;
 }
+          
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 h1,h2,h3,h4,h5,h6{
     font-size: clamp(1.2rem, 2.5vw, 1.8rem); 
 }
@@ -35,21 +48,26 @@ header{
     transition: 200ms ease-in;
 }
 .humburger span{
-    background: rgb(10, 67, 182);
-    width: 1.7rem;
-    height: 0.1rem;
+    background: #0a3cf3;
+    width: 1.8rem;
+    height: 0.2rem;
     display: block;
     margin-bottom: 0.3rem;
 }
 .nav-links-small-screen{
     position: fixed;
-    background: #088e13;
+    /* background: #2eeb3d; */
+    background: #20cb5f;
+    /* background: linear-gradient(-45deg, #ee7752, #2de62d, #23a6d5, #23d5ab); */
+        background-size: 400% 400%;
+        /* animation: gradient 15s ease infinite; */
+        /* color: #fff; */
     left: 0;
     /* right: 0; */
-    width: 80%;
+    width: 75%;
     top: 2.6rem;
     bottom: 0;
-    opacity: 0.97;
+    opacity: 0.99;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,9 +84,9 @@ header{
 /* The .nav-open class is to be manipulated by js */
 .nav-open span:nth-of-type(1){
     position: relative;  
-    transform: rotate(45deg);
+    transform: rotate(40deg);
     transition: 500ms;
-    top: 0.6rem;
+    top: 1rem;
   }
   .nav-open span:nth-of-type(2){
     transform: scale(1,0);
@@ -76,7 +94,7 @@ header{
     }
     .nav-open span:nth-of-type(3){
       position: relative;
-      transform: rotate(-45deg);
+      transform: rotate(-40deg);
       transition: 500ms;
       }
 
@@ -85,25 +103,31 @@ header{
 nav{
     position: fixed;
     /* background: #94fc94; */
-    background: #24c054;
+    background: #20cb5f;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     width: 100%;
     padding: 0.5rem;
     left: 0;
     right: 0;
     z-index: 1000;
+    opacity: 0.95;
     /* color: #fff; */
 }
 nav a{
     /* color: #090420; */
-    /* color: #fff; */
-    color: #3b3bd9;
+    color: #fff;
+    /* color: #3b3bd9; */
     font-weight: 700;
+    display: inline-block;
+    transition: 200ms ease-in;
+}
+nav a:hover{
+    transform: scale(1.1);
 }
 .logo{
     font-size: 1.2rem;
     cursor: pointer;
-    color: #e9fbc6;
+    color: #fff;
 }
 .nav-big-screen{
     display: grid;
@@ -140,9 +164,10 @@ nav a{
     /* Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to right,#0954ab, #38ef7d);  */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(-45deg, #ee7752, #2de62d, #23a6d5, #23d5ab);
+    background: #23a6d5;
+    background: linear-gradient(-45deg, #4b3fef, #2de62d, #23a6d5, #23d5ab);
         background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
+        /* animation: gradient 15s ease infinite; */
         color: #fff;
     border-radius: 0.2rem;
     /* color: #fff; */
@@ -198,7 +223,7 @@ section{
     max-height: 240px;
     padding: 0.1rem;
     border-radius: 0.4rem;
-    background: #a2ecb9;
+    background: #99feb9;
     display:grid;
     justify-content: center;
     align-items: center;
@@ -214,7 +239,7 @@ section{
 
   /* GUIDE BOOKS SECTION */
   .books-section{
-    background: #c5fbc5;
+    background: #2cd068;
   }
   .books-container{
     display: flex;
@@ -247,15 +272,27 @@ section{
 
 body{
     background: #2488fa;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #38ef7d, #2488fa); /* Chrome 10-25, Safari 5.1-6*/
-    background: linear-gradient(to right, #38ef7d, #2488fa); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+    /* background: -webkit-linear-gradient(to right, #38ef7d, #2488fa); */
+     /* Chrome 10-25, Safari 5.1-6*/
+    /* background: linear-gradient(to right, #38ef7d, #2488fa);  */
+    /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
     /* background: #357af0; */
+    /* background: linear-gradient(-45deg, #e8d9d4, #2de62d, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%; */
+    background: linear-gradient(-45deg, #ee7752, #2de62d, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        color: #fff;
 }
 
 .main-gallery-container{
-    background: #357af0;
-    background: -webkit-linear-gradient(to right, #38ef7d, #11998e); /* Chrome 10-25, Safari 5.1-6*/
-    background: linear-gradient(to right, #17ba55, #2488fa); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+    background: #23a6d5;
+    /* background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  */
+    /* Chrome 10-25, Safari 5.1-6*/
+    /* background: linear-gradient(to right, #17ba55, #2488fa); */
+     /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+    background: linear-gradient(-45deg, #186dc7, #1b8c1b, #23a6d5, #23d5ab);
     position: relative;
     top:1.5rem;
 }
@@ -266,7 +303,7 @@ body{
 .img-section-title{
     text-align: center;
     padding: 1rem;
-    color:#3b3bd9;
+    color:#124de1;
 }
 .awards-gallery{
     display:flex;
@@ -295,7 +332,7 @@ body{
 /* SMALL GALLERIES ON HOME PAGE @index.html */
 .inventorium-photos{
     /* background: #eee; */
-    background: #49e771;
+    /* background: #17b940; */
 }
 .photo-gallery-container{
     display: grid;
@@ -307,7 +344,7 @@ body{
 .main-small-gallery-wrapper{
     /* background: linear-gradient(-45deg, #26d6ca, #13a913, #23a6d5, #23d5ab); */
     /* background: #0b6693; */
-    background: #357af0;
+    /* background: #357af0; */
     display: block;
     color: #ffff;
     padding-top: 0.1rem;
@@ -316,7 +353,10 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 0.2rem;
     margin-bottom: 1rem;
-}
+    /* background: #23a6d5;
+    background: linear-gradient(-45deg, #4b3fef, #46f346, #0e2ee6, #23d5d2);
+        background-size: 400% 400%; */
+    }
 .small-gallery-photos-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -346,7 +386,7 @@ body{
     gap: 0.5rem;
     justify-content: space-between;
     /* background: #23a6d5; */
-    background: #357af0;
+    /* background: #357af0; */
     max-width: 500px;
 }
 .small-gallery-descriptive-txt a{
@@ -357,7 +397,7 @@ body{
     font-weight: 900;
     /* border: 1px solid #fff; */
     /* background: #23b3e3; */
-    background: #4383f1;
+    background: #09a1b5;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     /* border-radius: 0.3rem; */
