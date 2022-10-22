@@ -88,9 +88,9 @@ nav a{
     top: 2.3rem;
     /* background: #09471b; */
     /* background: #24c054; */
-    background: #0b6693;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right,#bfffce, #38ef7d);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right,#43a7f3, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1c4ab7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#1c4ab7, #38ef7d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#2488fa, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 0.2rem;
     color: #fff;
     /* padding-top: 10rem; */
@@ -178,8 +178,8 @@ section{
     transform: scale(1.02);
 }
 .books-container a img{
-    width: 300px;
-    max-height: 100%;
+    width: 280px;
+    height: 350px;
 }
 .guide-book-title{
     text-transform: uppercase;
@@ -213,13 +213,19 @@ section{
         margin: 0.5rem;
     }
 }
-.main-gallery-container{
-    position: relative;
-    top: 1.5rem;
-    background: #0b6693;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #38ef7d, #15c2d8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body{
+    background: #2488fa;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #2488fa); /* Chrome 10-25, Safari 5.1-6*/
+    background: linear-gradient(to right, #38ef7d, #2488fa); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+    /* background: #357af0; */
+}
 
+.main-gallery-container{
+    background: #357af0;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e); /* Chrome 10-25, Safari 5.1-6*/
+    background: linear-gradient(to right, #17ba55, #2488fa); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+    position: relative;
+    top:1.5rem;
 }
 .section-awards-imgs{
     margin: 0;
@@ -256,7 +262,8 @@ section{
 
 /* SMALL GALLERIES ON HOME PAGE @index.html */
 .inventorium-photos{
-    background: #eee;
+    /* background: #eee; */
+    background: #49e771;
 }
 .photo-gallery-container{
     display: grid;
