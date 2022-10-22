@@ -267,6 +267,7 @@ section{
     gap: 1rem;
     justify-items: center;
 }
+
 .main-small-gallery-wrapper{
     /* background: linear-gradient(-45deg, #26d6ca, #13a913, #23a6d5, #23d5ab); */
     /* background: #0b6693; */
@@ -322,4 +323,11 @@ section{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     /* border-radius: 0.3rem; */
+}
+
+@media (max-width:330px){
+    .photo-gallery-container{
+        grid-template-columns: repeat( auto-fit, minmax(330px, 1fr) );
+    
+    }
 }
