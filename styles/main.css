@@ -164,8 +164,8 @@ nav a:hover{
     /* Chrome 10-25, Safari 5.1-6 */
     /* background: linear-gradient(to right,#0954ab, #38ef7d);  */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: #23a6d5;
-    background: linear-gradient(-45deg, #4b3fef, #2de62d, #23a6d5, #23d5ab);
+    background: #17d744;
+    background: linear-gradient(-45deg, #4b3fef, #2de62d, #17d744, #23d5ab);
         background-size: 400% 400%;
         /* animation: gradient 15s ease infinite; */
         color: #fff;
@@ -271,7 +271,7 @@ section{
 
 
 body{
-    background: #2488fa;  /* fallback for old browsers */
+    background: #17d744;  /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #38ef7d, #2488fa); */
      /* Chrome 10-25, Safari 5.1-6*/
     /* background: linear-gradient(to right, #38ef7d, #2488fa);  */
@@ -280,19 +280,19 @@ body{
     /* background: linear-gradient(-45deg, #e8d9d4, #2de62d, #23a6d5, #23d5ab);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%; */
-    background: linear-gradient(-45deg, #ee7752, #2de62d, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #3ef097, #2de62d, #7ae493, #23d5ab);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
         color: #fff;
 }
 
 .main-gallery-container{
-    background: #23a6d5;
+    background: #17d744;
     /* background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  */
     /* Chrome 10-25, Safari 5.1-6*/
     /* background: linear-gradient(to right, #17ba55, #2488fa); */
      /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
-    background: linear-gradient(-45deg, #186dc7, #1b8c1b, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #17d744, #1b8c1b, #17d744, #15de65);
     position: relative;
     top:1.5rem;
 }
@@ -397,7 +397,8 @@ body{
     font-weight: 900;
     /* border: 1px solid #fff; */
     /* background: #23b3e3; */
-    background: #6c78e7;
+    /* background: #6c78e7; */
+    background: #3d62e4;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     /* border-radius: 0.3rem; */
