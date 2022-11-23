@@ -17,7 +17,7 @@ img{
 }
 .title{
     text-align: center;
-    padding: 1rem;
+    padding: 0.4rem;
 }
           
 @keyframes gradient {
@@ -105,7 +105,7 @@ header{
 
 
 nav{
-    position: fixed;
+    /* position: sticky; */
     /* background: #94fc94; */
     background: #20cb5f;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
@@ -407,17 +407,61 @@ body{
     padding-right: 0.5rem;
     /* border-radius: 0.3rem; */
 }
-main{
-    padding: 2rem 0.5rem;
-}
-.pdf-reader-container{
-    display:grid ;
+
+/*start of pdf viewer */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .top-bar {
+    background: rgb(27, 66, 192);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .pdf-container{
+    display: grid;
     justify-content: center;
     align-items: center;
-    justify-items: center ;
-    gap: 0.2rem;
-}
+    /* justify-items: center; */
+    position: relative;
+  }
+  .btn {
+    background: rgb(22, 178, 90);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .page-info {
+    margin-left: 1rem;
+  }
+  
+  .error {
+    background: orangered;
+    color: #fff;
+    padding: 1rem;
+  }
+  .pdf-render{
+    /* max-width: 300px; */
+    min-width: 300px;
+    max-width: 700px;
+    width: 100%;
+  }
 
+
+/*end of pdf viewer */
 
 
 /* media queries go below */

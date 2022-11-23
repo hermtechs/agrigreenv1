@@ -42,7 +42,7 @@
         </nav>
         <div class="hero">
             <div class="hero-txt" id="about-me">
-                <h1> <strong class="txt-strong title"> About Agri Green</strong><br></h1>
+                <h1> <strong class="txt-strong title"> About Agri Green Inventor</strong><br></h1>
                 <p>Agri-Green Foundation was conceptualized by <strong class="txt-strong"> Dr. Adnan Al Ramzani Al Naimi </strong > as a long-term goal for
                     Agri-Green,
                     as a company started in <strong class="txt-strong">2011</strong>. After the filing process for Agri-Green invention which had received
@@ -59,6 +59,27 @@
     </header>
 n>
     <main>
+      <section class="agrigreen-ivention">
+         <h1 class="title"> <strong class="txt-strong title">AGRI-GREEN INVENTION</strong><br></h1>
+         <h3 class="title">IFIA President Senior Advisor Identificatiomn Card</h3>
+         <div class="pdf-container">
+            <div class="top-bar">
+               <button class="btn" id="prev-page">
+                 <i class="fas fa-arrow-circle-left"></i> Prev Page
+               </button>
+               <button class="btn" id="next-page">
+                 Next Page <i class="fas fa-arrow-circle-right"></i>
+               </button>
+               <span class="page-info">
+                 Page <span id="page-num"></span> of <span id="page-count"></span>
+               </span>
+             </div>
+         
+             <canvas id="pdf-render" class="pdf-render"></canvas>
+         </div>
+
+      </section>
+
         <section class="medals-section">
             <h2 class="section-title title">Awards & Medals</h2>
             <div class="medals-container" id="awards">
@@ -753,7 +774,7 @@ n>
                 
               });
         </script>
-
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
         <script src="/scripts/index.js"></script>
 </body>
 
