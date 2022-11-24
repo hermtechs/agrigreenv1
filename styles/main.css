@@ -417,7 +417,7 @@ body{
   .top-bar {
     background: rgb(27, 66, 192);
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 0.5rem;
     position: sticky;
     top: 0;
     right: 0;
@@ -437,7 +437,7 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 0.5rem 2rem;
+    padding: 0.1rem 1.5rem;
   }
   
   .btn:hover {
@@ -456,8 +456,10 @@ body{
   .pdf-render{
     /* max-width: 300px; */
     min-width: 300px;
-    max-width: 700px;
+    max-width: 1000px;
     width: 100%;
+    /* height: 100%; */
+    /* max-height: 700px; */
   }
 
 

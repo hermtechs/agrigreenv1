@@ -18,9 +18,8 @@ navLinksSmallScreen.forEach(link=>{
     })
 })
 
-
 //pdf viewer
-const url = '/content/Dr. Adnan Identification card 01-11-2022 (1).pdf';
+const url = 'content/Dr. Adnan Identification card 01-11-2022 (1).pdf';
 
 let pdfDoc = null,
   pageNum = 1,
@@ -32,7 +31,7 @@ const scale = 1.5,
   ctx = canvas.getContext('2d');
 
 // Render the page
-const renderPage = num => {
+function renderPage (num){
   pageIsRendering = true;
 
   // Get page
@@ -62,7 +61,7 @@ const renderPage = num => {
 };
 
 // Check for pages rendering
-const queueRenderPage = num => {
+function queueRenderPage (num){
   if (pageIsRendering) {
     pageNumIsPending = num;
   } else {
@@ -80,7 +79,7 @@ const showPrevPage = () => {
 };
 
 // Show Next Page
-const showNextPage = () => {
+function showNextPage(){
   if (pageNum >= pdfDoc.numPages) {
     return;
   }
