@@ -277,7 +277,7 @@ function renderPage (num){
     .promise.then(pdfDoc_ => {
       pdfDoc = pdfDoc_;
       
-      mainPdfContainer[3].querySelector('#page-count').textContent = pdfDoc.numPages;
+      mainPdfContainer[2].querySelector('#page-count').textContent = pdfDoc.numPages;
   
       renderPage(pageNum);
     })
@@ -286,9 +286,9 @@ function renderPage (num){
       const div = document.createElement('div');
       div.className = 'error';
       div.appendChild(document.createTextNode(err.message));
-      mainPdfContainer[3].querySelector('body').insertBefore(div, canvas4);
+      mainPdfContainer[2].querySelector('body').insertBefore(div, canvas4);
       // Remove top bar
-      mainPdfContainer[3].querySelector('.top-bar').style.display = 'none';
+      mainPdfContainer[2].querySelector('.top-bar').style.display = 'none';
     });
   
 }
@@ -296,7 +296,7 @@ function renderPage (num){
 
 window.addEventListener('load', renderPdf2);
 window.addEventListener('load', renderPdf3);
-window.addEventListener('load', renderPdf4);
+// window.addEventListener('load', renderPdf4);
 
 
 
