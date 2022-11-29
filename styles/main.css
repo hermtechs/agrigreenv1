@@ -200,41 +200,48 @@ nav a:hover{
 }
 
 .medals-container{
-    display: flex;
-    flex-wrap: no wrap;
-    gap:1rem;
-    overflow: scroll;
+   display: grid; 
+   grid-template-columns: repeat(auto-fit, minmax(170px,1fr));
+   max-width: 1100px;
+   align-items: center;
+   justify-items: center;
+   justify-content: center;
+   margin: auto;
 }
 section{
    padding: 1.5rem;  
 }
  .medal-img{
-    min-width: 270px;
-    min-height: 240px;
-    max-width: 270px;
-    max-height: 240px;
+    min-width: 170px;
+    min-height: 140px;
+    max-width: 170px;
+    max-height: 140px;
     padding: 0.1rem;
-    border-radius: 0.4rem;
+    border-radius: 0.2rem;
  }
  .section-title{
     margin: 1rem;
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem); 
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem); 
+    padding: 1.5rem 0.2rem 1.5rem 0.2rem;
  }
  .see-all-awards{
-    min-width: 270px;
-    min-height: 240px;
-    max-width: 270px;
-    max-height: 240px;
+    min-width: 170px;
+    min-height: 140px;
+    max-width: 170px;
+    max-height: 140px;
     padding: 0.1rem;
-    border-radius: 0.4rem;
+    border-radius: 0.2rem;
     background: #99feb9;
     display:grid;
     justify-content: center;
     align-items: center;
+    justify-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
  }
  .medals-container{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+   /* -ms-overflow-style: none;*/  /* IE and Edge */
+    /*scrollbar-width: none;*/  /* Firefox */
  }
  .medals-container::-webkit-scrollbar {
     display: none;
