@@ -494,7 +494,8 @@ body{
 }
 .video-container #video {
     max-width: 100%;
-    border-radius: 0.2rem;
+    border-radius: 0.1rem;
+    min-height: 200px;
 }
 .video-container .controls {
     position: absolute;
