@@ -31,9 +31,11 @@ img{
         background-position: 0% 50%;
     }
 }
-
+.main-title{
+    margin-top: 1.5rem;
+}
 h1,h2,h3,h4,h5,h6{
-    font-size: clamp(1.2rem, 3.5vw, 1.8rem); 
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem); 
 }
 .txt-sml{
     font-size: 0.7rem;
@@ -186,7 +188,7 @@ nav a:hover{
 }
 .hero-txt h1{
     text-align: center;
-    font-size: clamp(1.5rem, 3.5vw, 2rem); 
+    font-size: clamp(1.5rem, 2.5vw, 2rem); 
 
 }
 .hero-txt p{
@@ -223,7 +225,7 @@ section{
  }
  .section-title{
     margin: 1rem;
-    font-size: clamp(1.3rem, 5vw, 2.5rem); 
+    font-size: clamp(1.3rem, 2.5, 2.5rem); 
     padding: 1.5rem 0.2rem 1.5rem 0.2rem;
     max-width: 800px;
     text-align: center;
@@ -485,24 +487,18 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 .video-container {
     position: relative;
-    display: flex;
-    width: max-content;
-    height: max-content;
-    justify-content: center;
-    align-items: center;
 }
 .video-container #video {
-    width: 100%;
-    max-width: 600px;
-    max-height: 400px;
-    border-radius: 0.5rem;
+    max-width: 100%;
+    border-radius: 0.2rem;
 }
 .video-container .controls {
     position: absolute;
-    bottom: 20px;
+    bottom: 0rem;
     width: 95%;
     display: flex;
     justify-content: space-around;
@@ -514,13 +510,13 @@ body{
     opacity: 1;
 }
 .video-container .controls >*{
-    padding-left: 0.5rem;
+    padding-left: 0.8rem;
 }
 .video-container .controls button {
     background: transparent;
     color: #fff;
     font-weight: bolder;
-    text-shadow: 2px 1px 2px #000;
+    text-shadow: 2px 1px 2px #232323;
     border: none;
     cursor: pointer;
 }
@@ -529,11 +525,9 @@ body{
     display: flex;
     align-items: center;
     border: none;
-    border-right: 3px solid #ccc;
-    border-left: 3px solid #ccc;
 }
 .video-container .controls .timeline .bar{
-    background: rgb(1, 1, 65);
+    background: rgb(23, 23, 173);
     height: 4px;
     flex: 1;
 }
@@ -543,7 +537,7 @@ body{
     height: 100%;
 }
 .fa {
-    font-size: 20px !important;
+    font-size: 1rem !important;
 }
 /* END OF VIDEO SECTION */
 

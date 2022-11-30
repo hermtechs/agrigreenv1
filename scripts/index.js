@@ -140,10 +140,10 @@ const fullScreen = (e) => {
 //   document.body.removeChild(a)
 // }
 // rewind the current time
-const rewind = (e) => {
-  video.currentTime = video.currentTime - ((video.duration/100) * 5)
-}
+// const rewind = (e) => {
+//   video.currentTime = video.currentTime - ((video.duration/100) * 5)
+// }
 // forward the current time
-const forward = (e) => {
-  video.currentTime = video.currentTime + ((video.duration/100) * 5)
-}
+// const forward = (e) => {
+//   video.currentTime = video.currentTime + ((video.duration/100) * 5)
+// }
