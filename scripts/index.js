@@ -48,22 +48,17 @@ function changeImgUrl(){
       if(pageNumber<totalPages){
         pageNumber++
       }
-      // else{
-      //   // alert('done')
-      //   pageNumber=1;
-      // }   
-      // pageNumber++;
+      else{
+        pageNumber = 1;
+      }
       let newImgSrc = img1.src.split(''); 
       // console.log(newImgSrc.length)
-      if(pageNumber>=10){
-        pageNumber = 1
-        newImgSrc[newImgSrc.length-4]=pageNumber;
-      }
-      else{
-        newImgSrc[newImgSrc.length-5]=pageNumber;
-
-      }
-      
+      newImgSrc[newImgSrc.length-5]=pageNumber;
+      // console.log(newImgSrc);
+      newImgSrc = newImgSrc.join('');
+      // console.log(newImgSrc)
+      img1.src = newImgSrc;
+      pageNumberElement.innerText = pageNumber;
       // console.log(newImgSrc);
      
       pageNumberElement.innerText = pageNumber;
