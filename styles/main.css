@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5,h6{
     color: #1212b5;
 }
 .title{
-    color:#3b3bd9;
+    color:#0026e5;
 }
 header{
     position: relative;
@@ -232,6 +232,8 @@ section{
  .see-all-awards{
     width: 100%;
     height: 100%;
+    min-width: 150px;
+    min-height: 120px;
     max-width: 150px;
     max-height: 120px;
     padding: 0.1rem;
@@ -241,6 +243,7 @@ section{
     justify-content: center;
     align-items: center;
     justify-items: center;
+    align-self: center;
     font-size: 1.1rem;
     font-weight: bold;
  }
@@ -458,11 +461,6 @@ body{
     margin-left: 1rem;
   }
   
-  .error {
-    background: orangered;
-    color: #fff;
-    padding: 1rem;
-  }
   .pdf-render{
     /* max-width: 300px; */
     min-width: 300px;

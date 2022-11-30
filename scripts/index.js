@@ -51,7 +51,8 @@ function changeImgUrl(){
       else{
         pageNumber = 1;
       }
-      let newImgSrc = img1.src.split(''); 
+      if(pageNumber<=10){
+      var newImgSrc = img1.src.split(''); 
       // console.log(newImgSrc.length)
       newImgSrc[newImgSrc.length-5]=pageNumber;
       // console.log(newImgSrc);
@@ -60,8 +61,15 @@ function changeImgUrl(){
       img1.src = newImgSrc;
       pageNumberElement.innerText = pageNumber;
       // console.log(newImgSrc);
-     
+      }
+      else{
+        // alert("false")
+        //here will handle the cases where the the images are more than 11
+        console.log(newImgSrc)
+      }
+
       pageNumberElement.innerText = pageNumber;
+     
     }
   })
    
