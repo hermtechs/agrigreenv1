@@ -490,6 +490,17 @@ body{
   .main-pdf-container .main-title{
     font-size: 1.8rem;
 }
+/* overlay to display while img loading */
+.pdf-overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .1;
+}
 
 /*end of pdf viewer */
 /* VIDEO SECTION */
@@ -550,6 +561,8 @@ body{
 .fa {
     font-size: 1rem !important;
 }
+
+
 /* END OF VIDEO SECTION */
 
 /* media queries go below */

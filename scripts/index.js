@@ -1,6 +1,6 @@
 const navBtn = document.querySelector('.humburger');
 const smallScreenMenu = document.querySelector('.nav-links-small-screen')
-const overlay =  document.querySelector('.overlay');
+const overlay =  document.querySelector('.pdf-overlay');
 
 // console.log(navBtn)
 navBtn.addEventListener('click', ()=>{
@@ -61,7 +61,12 @@ function changeImgUrl(){
       newImgSrc = newImgSrc.join('');
       // console.log(newImgSrc)
       img1.src = newImgSrc;
+
+      overlay.style.display="block"
+      img1.onlaod= checkPdfImageLoaded(img1);  
+
       pageNumberElement.innerText = pageNumber;
+
       // console.log(newImgSrc);
       }
       else{
@@ -88,6 +93,10 @@ function changeImgUrl(){
     newImgSrc = newImgSrc.join('');
     // console.log(newImgSrc)
     img1.src = newImgSrc;
+
+    overlay.style.display="block"
+    img1.onlaod= checkPdfImageLoaded(img1);
+
     pageNumberElement.innerText = pageNumber;
   }
 })
@@ -95,6 +104,11 @@ function changeImgUrl(){
   })
 }
 changeImgUrl()
+
+const  checkPdfImageLoaded = (img1)=>{
+  overlay.style.display = "none"
+  // console.log(img1.src)
+}
 
 // VIDEO PLAYER
 
