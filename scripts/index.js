@@ -1,5 +1,7 @@
 const navBtn = document.querySelector('.humburger');
 const smallScreenMenu = document.querySelector('.nav-links-small-screen')
+const overlay =  document.querySelector('.overlay');
+
 // console.log(navBtn)
 navBtn.addEventListener('click', ()=>{
     if(navBtn.classList.contains('nav-open')){
