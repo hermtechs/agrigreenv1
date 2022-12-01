@@ -53,6 +53,7 @@ function changeImgUrl(){
       else{
         pageNumber = 1;
       }
+
       if(pageNumber<=10){
       var newImgSrc = img1.src.split(''); 
       // console.log(newImgSrc.length)
@@ -95,6 +96,7 @@ function changeImgUrl(){
     img1.src = newImgSrc;
 
     overlay.style.display="block"
+  // smallScreenMenu.style.transform = 'translateX(0%)'
     img1.onlaod= checkPdfImageLoaded(img1);
 
     pageNumberElement.innerText = pageNumber;
@@ -107,7 +109,8 @@ changeImgUrl()
 
 const  checkPdfImageLoaded = (img1)=>{
   overlay.style.display = "none"
-  // console.log(img1.src)
+  // smallScreenMenu.style.transform = 'translateX(0%)'
+  
 }
 
 // VIDEO PLAYER
