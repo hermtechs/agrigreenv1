@@ -95,7 +95,7 @@ function changeImgUrl(){
     // console.log(newImgSrc)
     img1.src = newImgSrc;
 
-    overlay.style.display="block"
+    // overlay.style.display="block"
   // smallScreenMenu.style.transform = 'translateX(0%)'
     img1.onlaod= checkPdfImageLoaded(img1);
 

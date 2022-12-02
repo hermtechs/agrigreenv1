@@ -18,6 +18,7 @@ img{
 .title{
     text-align: center;
     padding: 0.4rem;
+    letter-spacing: 4PX;
 }
           
 @keyframes gradient {
@@ -199,6 +200,8 @@ nav a:hover{
     max-width: 800PX; 
     color: #0026e5;
     text-transform: uppercase;
+    letter-spacing: 5PX;
+
 }
 .hero-txt p{
     margin-top: 1rem;
